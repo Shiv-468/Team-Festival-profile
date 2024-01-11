@@ -1041,6 +1041,10 @@ video {
   font-size: 48px;
 }
 
+.text-\[17px\]{
+  font-size: 17px;
+}
+
 .font-\[400\]{
   font-weight: 400;
 }
@@ -1111,6 +1115,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .opacity-\[0\.6\]{
@@ -1283,6 +1291,12 @@ video {
   }
 }
 
+@media not all and (min-width: 640px){
+  .max-sm\:p-\[8px\]{
+    padding: 8px;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:col-start-1{
     grid-column-start: 1;
@@ -1371,6 +1385,10 @@ video {
 
   .sm\:text-\[36px\]{
     font-size: 36px;
+  }
+
+  .sm\:text-\[20px\]{
+    font-size: 20px;
   }
 }
 
