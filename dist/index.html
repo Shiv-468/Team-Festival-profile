@@ -15,18 +15,18 @@
                     <h1 class="font-poppins text-[25px] sm:text-[36px] font-bold leading-[48.6px] text-[#2C49FE]">Events<span class="text-[#01C8FF]">Free</span></h1>
                 </div>
                 <ul
-                    class="flex items-center gap-[61px] max-lg:fixed  max-lg:w-screen max-lg:h-screen max-lg:top-0 max-lg:right-[-100%] max-lg:flex-col max-lg:justify-center max-lg:bg-white menulist duration-400 z-10">
+                    class="flex items-center gap-[61px] max-lg:fixed  max-lg:w-screen max-lg:h-screen max-lg:top-0 max-lg:right-[-100%] max-lg:flex-col max-lg:justify-center max-lg:bg-white menulist duration-500 z-10">
                     <li><a href="#"
-                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 duration-900 after:transition-all">HOME</a>
+                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 after:duration-500 after:transition-all">HOME</a>
                     </li>
                     <li><a href="#"
-                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 duration-300 after:ease-linear after:transition-all">EVENTS</a>
+                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 after:duration-500 after:ease-linear after:transition-all">EVENTS</a>
                     </li>
                     <li><a href="#"
-                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 duration-300 after:ease-linear after:transition-all">FEED</a>
+                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 after:duration-500 after:ease-linear after:transition-all">FEED</a>
                     </li>
                     <li><a href="#"
-                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 duration-300 after:ease-linear after:transition-all text-nowrap">USER
+                            class="text-[16px]  font-[400] font-poppins relative after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:hover:w-full after:bottom-0 after:duration-500 after:ease-linear after:transition-all text-nowrap">USER
                             NAME</a></li>
                     <li>
                         <button
@@ -171,5 +171,14 @@
             </div>
         </div>
     </section>
+    <script>
+        const menuicon = document.querySelector(".menuicon");
+        const menulist = document.querySelector(".menulist");
+        menuicon.addEventListener("click", () => {
+            menulist.classList.toggle("show");
+            document.body.classList.toggle("overflow-hidden")
+            menuicon.classList.toggle("show");
+        })
+    </script>
 </body>
 </html>

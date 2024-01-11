@@ -781,6 +781,10 @@ video {
   gap: 61px;
 }
 
+.overflow-hidden{
+  overflow: hidden;
+}
+
 .text-wrap{
   text-wrap: wrap;
 }
@@ -851,6 +855,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#18205C\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 32 92 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#2C49FE\]{
   --tw-bg-opacity: 1;
   background-color: rgb(44 73 254 / var(--tw-bg-opacity));
@@ -864,11 +873,6 @@ video {
 .bg-\[\#F1F2F5\]{
   --tw-bg-opacity: 1;
   background-color: rgb(241 242 245 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#18205C\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 32 92 / var(--tw-bg-opacity));
 }
 
 .p-\[8px\]{
@@ -908,6 +912,10 @@ video {
 .py-\[8px\]{
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .pb-\[118px\]{
@@ -990,10 +998,6 @@ video {
   padding-top: 80px;
 }
 
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-
 .pt-\[90px\]{
   padding-top: 90px;
 }
@@ -1070,6 +1074,10 @@ video {
   font-style: normal;
 }
 
+.leading-\[18px\]{
+  line-height: 18px;
+}
+
 .leading-\[24px\]{
   line-height: 24px;
 }
@@ -1088,10 +1096,6 @@ video {
 
 .leading-\[72px\]{
   line-height: 72px;
-}
-
-.leading-\[18px\]{
-  line-height: 18px;
 }
 
 .text-\[\#000\]{
@@ -1132,21 +1136,27 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-500{
+  transition-duration: 500ms;
+}
+
 .menulist.show{
   right: 0px;
 }
 
 .menuicon.show .bar:nth-child(1){
   transform: translateY(6px) rotate(45deg);
+  transition: all 300ms linear;
 }
 
 .menuicon.show .bar:nth-child(2){
-  /* transform: translateY(7px) rotate(45deg); */
+  transition: all 300ms linear;
   display: none;
 }
 
 .menuicon.show .bar:nth-child(3){
-  transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-3px) rotate(-45deg);
+  transition: all 300ms linear;
 }
 
 .after\:absolute::after{
@@ -1201,6 +1211,11 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.after\:duration-500::after{
+  content: var(--tw-content);
+  transition-duration: 500ms;
 }
 
 .after\:ease-linear::after{
